@@ -26,6 +26,7 @@ class App extends React.Component {
                 <button className="button" onClick={this.fetchAdvice}>
                     <span>GIVE ME ADVICE!</span>
                 </button>
+                <p>@Breye-Foka 2024</p>
             </div>
         </div>
         </>
