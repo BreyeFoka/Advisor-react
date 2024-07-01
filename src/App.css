@@ -1,0 +1,79 @@
+#root, html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app{
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card{
+    background-color: #FCDC94;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 10px 10px #78ABA8;
+
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    height: 582px;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 500;
+    color: #EF9C66;
+}
+
+.button{
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    color: #C8CFA0;
+    background-color: #78ABA8;
+    border: none;
+    box-shadow: 2px 4px;
+    border-radius: 50px;
+}
+
+.button:active{
+    animation: rotate 0.5s;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
